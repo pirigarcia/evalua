@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Reporte generals</h1>
+
+<div id="reporte_generals">
+  <% @reporte_generals.each do |reporte_general| %>
+    <%= render reporte_general %>
+    <p>
+      <%= link_to "Show this reporte general", reporte_general %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New reporte general", new_reporte_general_path %>

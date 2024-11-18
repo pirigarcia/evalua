@@ -1,0 +1,51 @@
+<h1> Nuevo reporte </h1>
+
+<%= form_with model: @reporte do |form| %>
+<% @reporte.errors.full_messages.each do |error|%>
+<div>
+<%= error %>
+</div>
+<% end %>
+
+<div>
+    <%= form.label :sucursal%>
+    <%= form.text_field :sucursal%>
+</div>
+<br>
+<div>
+    <%= form.label :logrado%>
+    <%= form.text_field :logrado%>
+</div>
+<br>
+<div>
+    <%= form.label :comentario%>
+    <%= form.text_field :comentario%>
+</div>
+<br>
+<div>
+    <%= form.label :atencion%>
+    <%= form.text_field :atencion%>
+</div>
+<br>
+<div>
+    <%= form.label :venta%>
+    <%= form.text_field :venta%>
+</div>
+<br>
+<div>
+    <%= form.label :producto%>
+    <%= form.text_field :producto%>
+</div>
+<br>
+<div>
+    <%= form.label :instalaciones%>
+    <%= form.text_field :instalaciones%>
+</div>
+<br>
+<br>
+
+
+
+
+<%= form.submit %>
+<% end %>

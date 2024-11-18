@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+Olmeca:
+  sucursal: Olmeca
+  logrado: 9
+  comentario: Pocas opciones de repostería
+
+
+Americas:
+  sucursal: Américas
+  logrado: 9
+  comentario: Poco personal, excelente atención
+
+one:
+  venta: 'Venta 1'
+  atencion: 'Alta'
+  producto: 'Producto A'
+  instalaciones: 'Instalación 1'
+  sucursal: 'Olmeca'
+  logrado: 'Sí'
+

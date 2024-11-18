@@ -1,0 +1,20 @@
+<h2>Hoy: <%= Date.today %></h2> <br><br>
+
+<h3>Evaluación de atención y Esfuerzo de Venta</h3>
+
+
+
+
+<h3>Total de sucursales evaluadas: <strong><%= @reportes&.count || 0 %></strong></h3> <br>
+
+
+
+
+
+<% @reportes.each do |reporte|%> 
+<%= link_to reporte_path(reporte), class: 'reporte' do %>
+        <h3><%= reporte.sucursal %></h3>
+        <span>Logrado: <%= reporte.logrado%> </span> <br>
+        <span>Comentario: <%= reporte.comentario%> </span>
+    <% end %>
+<% end %>

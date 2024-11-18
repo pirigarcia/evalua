@@ -1,0 +1,2 @@
+module ReporteGeneralsHelper
+end

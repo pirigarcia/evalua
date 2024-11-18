@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evalúa X</title>
+    
+    <!-- SimpleCSS CDN -->
+    <link rel="stylesheet" href="https://cdn.simplecss.eu/simple.css">
+
+    <!-- Rails generated stylesheets (application.css or application.scss) -->
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    
+    <!-- Rails generated JavaScript tags (e.g., for Turbo and Stimulus) -->
+    <%= javascript_importmap_tags %>
+
+    <!-- CSRF meta tags for security -->
+    <%= csrf_meta_tags %>
+
+    <!-- Content Security Policy meta tag -->
+    <%= csp_meta_tag %>
+
+    <!-- Favicon -->
+    <%# <%= favicon_link_tag 'logch.png' %> 
+  </head>
+
+  <body>
+
+    <%= render 'shared/flash' %>
+    <%= render 'shared/header' %>
+
+    <!-- Yield the main content of the page -->
+    <%= yield %>
+  </body>
+</html>

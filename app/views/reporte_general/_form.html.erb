@@ -1,0 +1,37 @@
+<%= form_with(model: reporte_general) do |form| %>
+  <% if reporte_general.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(reporte_general.errors.count, "error") %> prohibited this reporte_general from being saved:</h2>
+
+      <ul>
+        <% reporte_general.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :venta, style: "display: block" %>
+    <%= form.text_field :venta %>
+  </div>
+
+  <div>
+    <%= form.label :atencion, style: "display: block" %>
+    <%= form.text_field :atencion %>
+  </div>
+
+  <div>
+    <%= form.label :producto, style: "display: block" %>
+    <%= form.text_field :producto %>
+  </div>
+
+  <div>
+    <%= form.label :instalaciones, style: "display: block" %>
+    <%= form.text_field :instalaciones %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
